@@ -1,0 +1,17 @@
+<div>
+  <h1>Đây là Home component</h1>
+  <span>{{ title }}</span>
+  <br />
+  <input [(ngModel)]="myName" (ngModelChange)="onChange()" />
+  <br />
+  <span [ngClass]="myClass">Bạn tên là {{ myName }}</span>
+  <br />
+  <button (click)="addName()" [style.color]="myColor">Thêm</button>
+  <br />
+  <br />
+  <select style="width: 300px">
+    <option *ngFor="let item of myDropdown; let i = index">
+      {{ i + 1 }}: {{ item }}
+    </option>
+  </select>
+</div>
