@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PrimeNgLibModule } from './prime-ng-lib/prime-ng-lib.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    PrimeNgLibModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

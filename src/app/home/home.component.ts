@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HelperService } from '../helper.service';
 
 @Component({
   selector: 'app-home',
@@ -11,11 +12,14 @@ export class HomeComponent implements OnInit {
   public myColor: string = 'red';
   public myClass: string = '';
   public myDropdown: string[] = [];
+  public chao = '';
 
-  constructor() {}
+  constructor(private helper: HelperService) {}
 
   ngOnInit(): void {
     this.myDropdown = [];
+    this.chao = this.helper.hello();
+    this.helper.name = 'Khuê';
   }
 
   public onChange(): void {
